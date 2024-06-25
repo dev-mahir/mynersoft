@@ -1,3 +1,14 @@
+// .eslintrc.js
+module.exports = {
+  extends: ["eslint:recommended", "plugin:react/recommended", "plugin:@next/next/recommended", "prettier"],
+  rules: {
+    "react/react-in-jsx-scope": "off",
+  },
+};
+
+// .prettierrc
 {
-  "extends": "next/core-web-vitals"
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all"
 }
