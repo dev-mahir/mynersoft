@@ -1,0 +1,5 @@
+// public/robots.txt
+User-agent: *
+Disallow: /api/
+Allow: /
+Sitemap: https://mynersoft.vercel.app
