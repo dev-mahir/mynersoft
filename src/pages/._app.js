@@ -5,7 +5,7 @@ import * as gtag from "../lib/gtag";
 import Head from "next/head";
 import { Analytics } from "next-analytics";
 
-const GA_TRACKING_ID = "YOUR_TRACKING_ID";
+const GA_TRACKING_ID = "G-YR5VHB867H";
 
 const MyApp = ({ Component, pageProps }) => {
 	const router = useRouter();

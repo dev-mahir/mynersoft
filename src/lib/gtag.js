@@ -1,5 +1,5 @@
 // lib/gtag.js
-export const GA_TRACKING_ID = "YOUR_TRACKING_ID"; 
+export const GA_TRACKING_ID = "G-BE2FBRST3K"; 
 
 export const pageview = (url) => {
 	window.gtag("config", GA_TRACKING_ID, {
@@ -14,3 +14,6 @@ export const event = ({ action, category, label, value }) => {
 		value: value,
 	});
 };
+
+
+
