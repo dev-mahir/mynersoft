@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
-@layer base{
-  input {
-    @apply outline-none
-  }
-  
+@layer base {
+	input {
+		@apply outline-none;
+	}
 }
 
-@layer components{
-  .container {
-    @apply mx-auto
-  }
-
+@layer components {
+	.container {
+		@apply mx-auto;
+	}
+	.btn {
+		@apply flex px-5 py-1 justify-center items-center rounded-full text-white cursor-pointer whitespace-nowrap;
+	}
+	.card {
+		@apply border border-gray-200 rounded px-3 py-2;
+	}
 }

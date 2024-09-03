@@ -1,4 +1,4 @@
-import { getMetadata } from "../components/Header/MetaData/metadata";
+import { getMetadata } from "@/components/MetaData/metadata";
 
 
 export const metadata = getMetadata(

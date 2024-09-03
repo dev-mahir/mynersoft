@@ -1,9 +1,8 @@
-import Image from "next/image";
+import Hero from "@/components/Home/Hero";
+import React from "react";
 
-export default function Home() {
-	return (
-		<>
-			<h1>Welcome</h1>
-		</>
-	);
-}
+const Home = () => {
+	return <Hero />;
+};
+
+export default Home;

@@ -1,5 +1,5 @@
-import { getMetadata } from "@/app/components/Header/MetaData/metadata";
-import getAllPosts from "@/lib/getAllPosts";
+import { getMetadata } from "@/components/MetaData/metadata";
+import { js_topics } from "@/constants";
 import Link from "next/link";
 import React from "react";
 
@@ -8,19 +8,24 @@ export const metadata = getMetadata(
 	"Learn javascript in simple way"
 );
 
-const Js = async () => {
-	const posts = await getAllPosts(
-		"https://jsonplaceholder.typicode.com/posts?_limit=5"
-    );
-   
-    
-    return <div>
-        <ul>
-            {posts.map((post) => <li key={post.id}>
-                <Link href={`/learn/js/${post.id}`}>{post.title}</Link>
-            </li>)}
-        </ul>
-    </div>;
+const Js = () => {
+	return (
+		<div className=" ">
+			<div
+				className=" flex justify-start flex-wrap  gap-4
+            ">
+				{js_topics.map((item) => (
+					<div className="card bg-emerald-600" key={item}>
+						<Link
+							href={`/${item.slug}`}
+							className="font-bold text-white ">
+							{item.label}
+						</Link>
+					</div>
+				))}
+			</div>
+		</div>
+	);
 };
 
 export default Js;
