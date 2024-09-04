@@ -3,8 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+	label {
+		@apply text-sm font-medium;
+	}
 	input {
-		@apply outline-none;
+		@apply border rounded font-medium py-[6px] px-2 w-full focus-visible:outline-none;
+	}
+	h2{
+		@apply text-3xl font-bold
+	}
+	h3{
+		@apply text-[28px] font-bold
+	}
+	p{
+		@apply text-gray-600
 	}
 }
 
@@ -13,9 +25,15 @@
 		@apply mx-auto;
 	}
 	.btn {
-		@apply flex px-5 py-1 justify-center items-center rounded-full text-white cursor-pointer whitespace-nowrap;
+		@apply flex px-6 py-[6px] justify-center items-center rounded-full  cursor-pointer whitespace-nowrap transition-all duration-100;
+	}
+	.btn-primary {
+		@apply bg-primary text-white  hover:bg-secondary;
 	}
 	.card {
 		@apply border border-gray-200 rounded px-3 py-2;
+	}
+	.form-control {
+		@apply py-2;
 	}
 }
